@@ -5,4 +5,4 @@ line = ()
 for file in filee:
     if file.startswith("From"):
         line = file.split()[1]
-    print()
+    print(line)
