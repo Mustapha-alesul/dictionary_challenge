@@ -1,5 +1,5 @@
 "A python challenge to sort out emails sent messages from  A given list"
-
+import re
 filee = open("mbox.txt","r")
 emails = {}
 for file in filee:
@@ -9,3 +9,4 @@ for file in filee:
         maxx = max(emails)
 print(emails)
 print("maximum:", maxx)
+print(re(^,maxx))
