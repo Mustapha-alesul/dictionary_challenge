@@ -6,4 +6,6 @@ for file in filee:
     if file.startswith("From"):
         line = file.split()[1]
         emails[line] = emails.get(line,0) + 1
+        maxx = max(emails)
 print(emails)
+print("maximum:", maxx)
