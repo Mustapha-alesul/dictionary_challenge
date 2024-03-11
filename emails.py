@@ -9,4 +9,4 @@ for file in filee:
         maxx = max(emails)
 print(emails)
 print("maximum:", maxx)
-print(re(^,maxx))
+print(re.compile('^@',maxx))
