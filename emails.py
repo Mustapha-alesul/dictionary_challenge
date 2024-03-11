@@ -5,5 +5,5 @@ emails = {}
 for file in filee:
     if file.startswith("From"):
         line = file.split()[1]
-        emails.get(line,0) + 1
+        emails[line] = emails.get(line,0) + 1
 print(emails)
