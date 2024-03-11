@@ -7,7 +7,7 @@ for file in filee:
         line = file.split()[1]
         emails[line] = emails.get(line,0) + 1
         maxx = max(emails)
-        domainn = maxx[maxx.index('@')+1:maxx.index(".")]
+        domainn = maxx[maxx.index('@')+1 : maxx.index(".")]
 print(emails)
 print("maximum:", maxx)
 print('domain:', domainn)
