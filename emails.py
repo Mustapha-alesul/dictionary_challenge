@@ -19,6 +19,6 @@ for file in filee:
         domain_name = most_email_sent[most_email_sent.index('@')+1 : most_email_sent.index(".")]
 print(emails)
 print("maximum:", most_email_sent)
-print('domain:', domain_name)
+print('domain name of most sending email:', domain_name)
 print(days)
 filee.close()
