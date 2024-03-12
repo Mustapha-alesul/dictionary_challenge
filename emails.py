@@ -9,8 +9,7 @@ for file in filee:
         emails[line] = emails.get(line, 0) + 1
         try:
             day = file.split()[2]
-
-        days[day] = days.get(day, 0) + 1
+            days[day] = days.get(day, 0) + 1
         maxx = max(emails)
         domain_name = maxx[maxx.index('@')+1 : maxx.index(".")]
 print(emails)
