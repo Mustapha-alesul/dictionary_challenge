@@ -1,4 +1,4 @@
-
+hours = {}
 with open('mbox.txt','r') as filee:
     for file in filee:
         if file.startswith("From"):
@@ -7,4 +7,5 @@ with open('mbox.txt','r') as filee:
 
             except IndexError:
                 continue
-            print(line)
+            # hours = line.split(':')[0]
+            
