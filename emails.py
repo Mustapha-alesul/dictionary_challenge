@@ -5,17 +5,20 @@ emails = {}
 days = {}
 for file in filee:
     if file.startswith("From"):
-        line = file.split()[1]
-        emails[line] = emails.get(line, 0) + 1
         try:
             day = file.split()[2]
             days[day] = days.get(day, 0) + 1
-        except IndexError:
 
-        maxx = max(emails)
-        domain_name = maxx[maxx.index('@')+1 : maxx.index(".")]
+        except IndexError:
+            continue
+
+        line = file.split()[1]
+        emails[line] = emails.get(line, 0) + 1
+
+        most_email_sent = max(emails)
+        domain_name = most_email_sent[most_email_sent.index('@')+1 : most_email_sent.index(".")]
 print(emails)
-print("maximum:", maxx)
-print('domain:', domainn)
-print(day)
+print("maximum:", most_email_sent)
+print('domain:', domain_name)
+print(days)
 filee.close()
