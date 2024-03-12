@@ -7,5 +7,4 @@ with open('mbox.txt','r') as filee:
 
             except IndexError:
                 continue
-            # hours = line.split(':')[0]
-            
+            hours = line.split(':')[0]
