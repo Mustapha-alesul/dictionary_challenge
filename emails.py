@@ -14,5 +14,5 @@ for file in filee:
 print(emails)
 print("maximum:", maxx)
 print('domain:', domainn)
-# print(day)
+print(day)
 filee.close()
