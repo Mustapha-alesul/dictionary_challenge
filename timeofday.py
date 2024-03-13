@@ -1,5 +1,5 @@
 hours = {}
-hrs = tuple()
+hrs = ()
 with open('mbox.txt','r') as filee:
     for file in filee:
         if file.startswith("From"):
@@ -8,8 +8,9 @@ with open('mbox.txt','r') as filee:
 
             except IndexError:
                 continue
+
             hour = line.split(':')[0]
             hours[hour] = hours.get(hour, 0) + 1
             hrs = hours
 
-    for h in hrs:
+    print(hours.keys(),hours.values())
